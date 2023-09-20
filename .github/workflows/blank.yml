@@ -1,0 +1,14 @@
+- name: ZAP Full Scan
+ uses:zaproxy/action-full-scan@v0.7.0
+  with:
+    # GitHub Token to create issues in the repository
+    token: # optional, default is ${{ github.token }}
+    # Target URL
+    target: "https://ginandjuice.shop/"
+    rules_file_name: # optional
+    docker_name: # default is ghcr.io/zaproxy/zaproxy:stable
+    cmd_options: # optional
+    issue_title: # optional, default is ZAP Full Scan Report
+    fail_action: # optional
+    allow_issue_writing: # optional, default is true
+    artifact_name: # optional, default is zap_scan
