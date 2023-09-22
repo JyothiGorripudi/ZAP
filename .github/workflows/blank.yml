@@ -14,4 +14,4 @@ jobs:
     - name: OWASP ZAP Full Scan
       uses: zaproxy/action-full-scan@v0.1.0
       with:
-        target: "https://techconnectweb.azurewebsites.net/"
+        target: "https://google-gruyere.appspot.com/ -r report.html"
